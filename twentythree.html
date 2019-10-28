@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <h2 style="color:rgb(155, 75, 230)">CHECK NUMBER IS EVEN OR ODD</h2>
+        Number:<input id="h1"type="text"><br><br>
+        <button onClick="CHECK()">CHECK</button><br><br>
+        <div id="two" style="color:rgb(196, 93, 98);"></div>
+            <script>
+            function CHECK()
+            {
+                var Numb=document.getElementById("h1").value;
+                if(Numb%2==0)
+                {
+                    document.getElementById("two").innerHTML="<span style='color:green'>"+Numb+"</span>"+" IS EVEN";
+                }
+                else
+                {
+                    document.getElementById("two").innerHTML="<span style='color:red'>"+Numb+"</span>"+" IS ODD";
+ 
+                }
+                
+                
+
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

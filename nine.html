@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h2 style="color:rgb(143, 23, 113)">CONVERSION</h2>
+        Fahrenheit-Value:<input id="h1"type="text"><br><br>
+        <button onClick="CELCIUS()">CELCIUS</button>
+       
+        <div id="two" style="color:rgb(223, 97, 191);"></div>
+            <script>
+            function CELCIUS()
+            {
+                var Fahrenheit =document.getElementById("h1").value;
+                var CELCIUS=(Fahrenheit-32) * (5/9) ;
+                document.getElementById("two").innerHTML="<h3>Celcius is  : "+"<span style='color:red;'>"+CELCIUS+"°C</span>"+"</h3><br>";
+
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

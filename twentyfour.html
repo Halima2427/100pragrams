@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <h2 style="color:rgb(155, 75, 230)">CHECK YEAR IS LEAP OR NOT</h2>
+        YEAR:<input id="h1"type="text"><br><br>
+        <button onClick="CHECK()">CHECK</button><br><br>
+        <div id="two" style="color:rgb(196, 93, 98);"></div>
+            <script>
+            function CHECK()
+            {
+                var Year=document.getElementById("h1").value;
+                if(Year%4==0 || Year%400==0)
+                {
+                    document.getElementById("two").innerHTML="<span style='color:green'>"+Year+"</span>"+" IS LEAP YEAR";
+                }
+                else
+                {
+                    document.getElementById("two").innerHTML="<span style='color:red'>"+Year+"</span>"+" IS NOT LEAP YEAR";
+ 
+                }
+                
+                
+
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

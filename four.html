@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h2 style="color:rgb(75, 230, 152)">PERIMETER OF RECTANGLE</h2>
+        Length:<input id="h1"type="text"><br><br>
+        Breadth:<input id="h2"type="text"><br><br>
+        <button onClick="PERIMETER()">PERIMETER</button>
+        <div id="two" style="color:rgb(75, 230, 152);"></div>
+            <script>
+            function PERIMETER()
+            {
+                var Length=document.getElementById("h1").value;
+                var Breadth=document.getElementById("h2").value;
+                var PERIMETER=2*(parseInt(Length)+parseInt(Breadth));
+                document.getElementById("two").innerHTML="<h2>Perimeter of Rectangle is  : "+PERIMETER+"</h2>";
+
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

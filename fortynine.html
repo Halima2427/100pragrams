@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h2 style="color:rgb(75, 124, 230)">LEAP YEAR OR NOT`- USING CONDITIONAL OPERATOR</h2>
+        YEAR :<br><br>
+        <input id="h1"type="text"><br><br>
+        <button onClick="ENTER()">CHECK</button>
+        <div id="demo" style="color:rgb(230, 75, 171);"></div>
+            <script>
+            function ENTER()
+            {
+                var Year=document.getElementById("h1").value;
+                var LEAP=(Year%4==0 || Year%400==0)?'LEAP':'NOT LEAP';
+                document.getElementById("demo").innerHTML="<h4>"+Year+" IS "+LEAP+" YEAR</h4>";
+
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

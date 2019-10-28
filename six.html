@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h2 style="color:rgb(143, 23, 113)">AREA ,DIAMETER,CIRCUMFERENCE OF CIRCLE</h2>
+        Radius:<input id="h1"type="text"><br><br>
+        <button onClick="ENTER()">ENTER</button>
+        <div id="two" style="color:rgb(223, 97, 191);"></div>
+            <script>
+            function ENTER()
+            {
+                var Radius=document.getElementById("h1").value;
+                const pi=3.14;
+                var AREA=pi*parseInt(Radius*Radius);
+                var DIAMETER=2*parseInt(Radius);
+                var CIRCUMFERENCE=2*pi*parseInt(Radius);
+                document.getElementById("two").innerHTML="<h3>Area of Circle is  : "+"<span style='color:red;'>"+AREA+"</span>"+"</h3>"+
+                "<h3>Diameter of Circle is  : "+"<span style='color:red;'>"+DIAMETER+"</span>"+"</h3>"+
+                "<h3>Circumference of Circle is  : "+"<span style='color:red;'>"+CIRCUMFERENCE+"</span>"+"</h3>";
+
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

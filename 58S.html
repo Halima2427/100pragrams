@@ -1,0 +1,23 @@
+<html>
+        <body>
+            <h2 style="color:rgb(75, 124, 230)">COPY OF STRING</h2>
+            ENTER STRING:<br><br>
+            <input id="h1"type="text"><br><br>
+            <button onClick="COPY()">COPY</button><br><br>
+            <div id="demo" style="color:rgb(204, 133, 52);"></div>
+                <script>
+    
+                function COPY()
+                {
+                    var str=document.getElementById("h1").value;
+                    var str2=str;
+                    document.getElementById("demo").innerHTML="FIRST STRING  :"+str+"<br><br>"+
+                    "COPY STRING "+str2;
+    
+                }
+                
+                
+                </script>
+        </body>
+    
+    </html>

@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <h2 style="color:rgb(155, 75, 230)">CHECK NUMBER IS POSITIVE,NEGATIVE OR ZERO</h2>
+        Number:<input id="h1"type="text"><br><br>
+        <button onClick="CHECK()">CHECK</button><br><br>
+        <div id="two" style="color:rgb(196, 93, 98);"></div>
+            <script>
+            function CHECK()
+            {
+                var Numb=document.getElementById("h1").value;
+                var CHECK=Math.sign(Numb);
+                if(CHECK==1)
+                {
+                    document.getElementById("two").innerHTML="<span style='color:red'>"+Numb+"</span>"+" IS POSITIVE NUMBER";
+                }
+                else if(CHECK==-1)
+                {
+                    document.getElementById("two").innerHTML="<span style='color:red'>"+Numb+"</span>"+" IS NEGATIVE NUMBER";
+                }
+                else if(CHECK==0)
+                {
+                    document.getElementById("two").innerHTML="<span style='color:red'>"+Numb+"</span>"+" IS ZERO";
+                }
+                
+
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

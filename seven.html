@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <h2 style="color:rgb(143, 23, 113)">CONVERSION</h2>
+        Length In Centimeter:<input id="h1"type="text"><br><br>
+        <button onClick="METER()">METER</button>
+        <button onClick="KILOMETER()">KILOMETER</button>
+        <div id="two" style="color:rgb(223, 97, 191);"></div>
+            <script>
+            function METER()
+            {
+                var Centimeter=document.getElementById("h1").value;
+                var METER=Centimeter/100;
+                document.getElementById("two").innerHTML="<h3>Meter is  : "+"<span style='color:red;'>"+METER+"</span>"+"</h3><br>";
+
+            }
+            function KILOMETER()
+            {
+                var Centimeter=document.getElementById("h1").value;
+                var KILOMETER=Centimeter/100000;
+                document.getElementById("two").innerHTML="<h3>KiloMeter is  : "+"<span style='color:red;'>"+KILOMETER+"</span>"+"</h3>";
+
+            }
+            
+            </script>
+    </body>
+
+</html>

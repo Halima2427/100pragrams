@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h2 style="color:rgb(155, 75, 230)">CHECK VOWEL OR NOT</h2>
+        ENTER ALPHABET: <input type="text" id="h1"><br><br>
+        <button onClick="CHECK()">CHECK</button><br><br>
+        <div id="demo" style="color:rgb(95, 214, 91)"></div>
+        <script>
+            function CHECK()
+            {
+             var input=document.getElementById("h1").value;
+             if((input=='a'||input=='e'||input=='i'||input=='o'||input=='u')||(input=='A'||input=='E'||input=='I'||input=='O'||input=='U'))
+             {
+                 document.getElementById("demo").innerHTML="ALPHABET YOU ENTERED IS :<span style='color:red'>VOWEL</span>";
+             }
+             else
+             {
+                document.getElementById("demo").innerHTML="ALPHABET YOU ENTERED IS :<span style='color:red'>CONSONANT</span>";
+
+             }
+
+            }
+        </script>
+    </body>
+</html>

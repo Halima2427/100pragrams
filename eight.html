@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h2 style="color:rgb(143, 23, 113)">CONVERSION</h2>
+        Celcius-Value:<input id="h1"type="text"><br><br>
+        <button onClick="FAHRENHEIT()">FAHRENHEIT</button>
+       
+        <div id="two" style="color:rgb(223, 97, 191);"></div>
+            <script>
+            function FAHRENHEIT()
+            {
+                var Celcius=document.getElementById("h1").value;
+                var FAHRENHEIT=(Celcius * 9/5) + 32 ;
+                document.getElementById("two").innerHTML="<h3>Fahrenheit is  : "+"<span style='color:red;'>"+FAHRENHEIT+"°F</span>"+"</h3><br>";
+
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

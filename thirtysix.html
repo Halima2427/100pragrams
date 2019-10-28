@@ -1,0 +1,36 @@
+<body>
+    <h2 style="color:crimson">PROFIT OR LOSS</h2>
+    SELLING PRICE :<br><br>
+    <input type="text" placeholder="a" id="h1" style="color:rgb(26, 5, 77)"><br><br>
+    COST PRICE :<br><br>
+    <input type="text" placeholder="b" id="h2" style="color:rgb(26, 5, 77)"><br><br>
+
+    <button onClick="PROFITLOSS()">PROFIT_LOSS</button><br><br>
+    <div id="demo" style="color:rgb(63, 219, 16)"></div>
+    <script>
+
+        function PROFITLOSS() {
+            var SP = parseInt(document.getElementById("h1").value);
+            var CP =parseInt (document.getElementById("h2").value);
+            if(SP>CP)
+            {   
+                var profit=SP-CP;
+                document.getElementById("demo").innerHTML ="<span style='color:red'>PROFIT IS :"+profit+"</span>"
+            }
+            else if(CP>SP)
+            {
+                var loss=CP-SP;
+                document.getElementById("demo").innerHTML ="<span style='color:red'>LOSS IS :"+loss+"</span>"
+            }
+            else{
+                var noth=SP-CP;
+                document.getElementById("demo").innerHTML ="<span style='color:red'>"+noth+"   INDICATES NO LOSS /   NO PROFIT  </span>"
+
+            }
+           
+
+        }
+    </script>
+</body>
+
+</html

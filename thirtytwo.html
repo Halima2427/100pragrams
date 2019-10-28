@@ -1,0 +1,32 @@
+<body>
+    <h2 style="color:crimson">VALID TRIANGLE BY ANGLES</h2>
+    ENTER ANGLE :<br><br>
+    <input type="text" id="h1" style="color:rgb(26, 5, 77)"><br><br>
+    <input type="text" id="h2" style="color:rgb(26, 5, 77)"><br><br>
+    <input type="text" id="h3" style="color:rgb(26, 5, 77)"><br><br>
+
+    <button onClick="VALID()">VALID</button><br><br>
+    <div id="demo" style="color:rgb(63, 219, 16)"></div>
+    <script>
+        
+        function VALID()
+        {
+            var ang1=document.getElementById("h1").value;
+            var ang2=document.getElementById("h2").value;
+            var ang3=document.getElementById("h3").value;
+            var total=parseInt(ang1)+parseInt(ang2)+parseInt(ang3);
+            if(total==180)
+            {
+                document.getElementById("demo").innerHTML="<span style='color:red'>VALID TRIANGLE</span>";
+            }
+            else
+            {
+                document.getElementById("demo").innerHTML="<span style='color:red'>NOT VALID TRIANGLE</span>";
+
+            }
+            
+        
+        }
+        </script>
+    </body>
+</html

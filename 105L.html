@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <h2 style="color:rgb(75, 124, 230)">ADD FIRST AND LAST DIGITS</h2>
+    ENTER NUMBER:<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="ENTER()">DIGITS</button><br><br>
+    <div id="demo" style="color:rgb(116, 202, 36);"></div>
+    <script>
+        function ENTER() {
+
+            var n = parseFloat(document.getElementById("h1").value);
+            var lnum=n%10;
+            while(n>10)
+            {
+            var n=Math.floor(n/10);
+            
+            }
+            document.getElementById("demo").innerHTML = "SUM OF FIRST AND LAST DIGIT IS : <span style='color:red'>"+parseInt(n+lnum)+"</span>";
+            
+        }
+
+    </script>
+</body>
+
+</html>

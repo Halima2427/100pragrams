@@ -1,0 +1,88 @@
+<html>
+    <body>
+        <h2 style="color:rgb(75, 230, 152)">ARITHMETIC OPERATIONS</h2>
+        <h4>FirstNumber:</h4><input id="h1"type="text"><br><br>
+        <h4>SecondNumber:</h4><input id="h2"type="text"><br><br>
+        <button onClick="ADD()">ADD</button>
+        <button onClick="SUB()">SUB</button>
+        <button onClick="MUL()">MUL</button>
+        <button onClick="DIV()">DIV</button>
+        <button onClick="MOD()">MOD</button>
+        <button onClick="EXP()">EXP</button>
+        <button onClick="INC()">INC</button>
+        <button onClick="DEC()">DEC</button>
+
+        <div id="two" style="color:rgb(75, 230, 152);"><h2>.....</h2></div>
+            <script>
+            function ADD()
+            {
+                var FirstNumber=document.getElementById("h1").value;
+                var SecondNumber=document.getElementById("h2").value;
+                var ADD=parseInt(FirstNumber)+parseInt(SecondNumber);
+                document.getElementById("two").innerHTML="<h2>ADDITION :"+ADD+"</h2>";
+
+            }
+            function SUB()
+            {
+                var FirstNumber=document.getElementById("h1").value;
+                var SecondNumber=document.getElementById("h2").value;
+                var SUB=parseInt(FirstNumber)-parseInt(SecondNumber);
+                document.getElementById("two").innerHTML="<h2>SUBTRACTION :"+SUB+"</h2>";
+
+            }
+            function MUL()
+            {
+                var FirstNumber=document.getElementById("h1").value;
+                var SecondNumber=document.getElementById("h2").value;
+                var MUL=parseInt(FirstNumber)*parseInt(SecondNumber);
+                document.getElementById("two").innerHTML="<h2>MULTIPLICATION :"+MUL+"</h2>";
+
+            }
+            function DIV()
+            {
+                var FirstNumber=document.getElementById("h1").value;
+                var SecondNumber=document.getElementById("h2").value;
+                var DIV=parseInt(FirstNumber)/parseInt(SecondNumber);
+                document.getElementById("two").innerHTML="<h2>DIVISION :"+DIV+"</h2>";
+
+            }
+            function MOD()
+            {
+                var FirstNumber=document.getElementById("h1").value;
+                var SecondNumber=document.getElementById("h2").value;
+                var MOD=parseInt(FirstNumber)%parseInt(SecondNumber);
+                document.getElementById("two").innerHTML="<h2>MODULUS GIVES REMAINDER :"+MOD+"</h2>";
+
+            }
+            function EXP()
+            {
+                var FirstNumber=document.getElementById("h1").value;
+                var SecondNumber=document.getElementById("h2").value;
+                var EXP=parseInt(FirstNumber)**parseInt(SecondNumber);
+                document.getElementById("two").innerHTML="<h2>EXPONENT VALUE :"+EXP+"</h2>";
+
+            }
+            function INC()
+            {
+                var FirstNumber=document.getElementById("h1").value;
+                //var SecondNumber=document.getElementById("h2").value;
+                alert("Only First Number Takes");
+                var INC=parseInt(FirstNumber)+1;
+                document.getElementById("two").innerHTML="<h2>INCREAMENT :"+INC+"</h2>";
+
+            }
+            function DEC()
+            {
+                var FirstNumber=document.getElementById("h1").value;
+                alert("Only First Number Takes");
+                //var SecondNumber=document.getElementById("h2").value;
+                var DEC=parseInt(FirstNumber)-1;
+                document.getElementById("two").innerHTML="<h2>DECREAMENT :"+DEC+"</h2>";
+
+            }
+            
+            
+            </script>
+    </body>
+
+</html>
